@@ -1,8 +1,7 @@
 <?php
 //vérifier sur une page si les ingrédients conviennent
-//paramètres
-$exclure=('porc','E604','ascorbate');
-$url='https://fr.openfoodfacts.org/produit/3166350006271/tagliatelles-a-la-carbonara-marie';
+include 'params.inc.php';
+
 if (!isset($_GET['id_produit']))
 	die('pas d\'identifiant produit');
 $produit=$_GET['id_produit'];
