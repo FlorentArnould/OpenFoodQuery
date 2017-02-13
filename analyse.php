@@ -11,6 +11,8 @@ if (!ereg('^[0-9]+$',$id_produit)
 $page=file($url$id_produit);
 $liste=array_search($exclure,$page);
 //affichage
-echo 'ingrédients exclus';
+echo '<b>ingrédients exclus</b>';
+echo '<pre>';
 print_r($liste);
+echo '</pre>';
 ?>
