@@ -8,6 +8,7 @@ $produit=$_GET['id_produit'];
 if (!ereg('^[0-9]+$',$id_produit)
 	die('Erreur de format de l\'identifiant');
 //analyse
+//nécessite l'activation de l'open_basedir et désactivation du safe_mode
 $page=file($url$id_produit);
 $liste=array_search($exclure,$page);
 //affichage
